@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <title>Salary Calculator</title>
+    </head>
+
+    <body>
+
+        <h4> Salary calculation</h4>                           <!-- creating a header -->
+        <form name="form" , method="POST">                     <!-- defining a form to serve as user-input interface. Post method request was used, as its unlimited and secure-->
+            <div >                                             <!--divison is created for each of the label so as to allow for easy styling by css-->
+            <label for="1">Salary</label>                    <!--Salary label was created within the form-->
+                <input                                           
+                    name="salary"
+                    type="number"
+                    id="1"
+                    placeholder=""
+                />                                              <!--This is used to specified what a user can enter data. It work with some attribute such as name, type etc-->
+            
+            </div>
+
+            <div>
+            <label for="2">Bonus</label>
+                <input
+                    name="bonus"
+                    type="number"
+                
+                    id="2"
+                    placeholder=""
+                />
+            </div>
+
+            <div >
+            <label for="3">Tax</label>
+                <input
+                    type="number"
+                    name="taxes"
+                
+                    id="3"
+                    placeholder=""
+                />
+            </div>
+
+            <div>
+            <button type="submit" value="Submit" >
+            Run
+            </button>
+
+            </div>
+
+        </form>
+ 
+         <h3 >{{ '%0.0f'|format(total|float) }}  Netto salary</h3> 
+     
+
+    </body>
+</html
